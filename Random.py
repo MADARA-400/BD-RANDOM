@@ -1,5 +1,8 @@
-import os, sys
-try:
-    __import__(un).rsbuy()
-except Exception as e:
-    exit(str(e))
+import platform,os
+#####
+os.system("git pull")
+bit = platform.architecture()[0]
+if bit == '64bit':
+    import mn
+elif bit == '32bit':
+    print("SORRY BRO")
